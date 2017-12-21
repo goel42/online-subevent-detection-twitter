@@ -1,0 +1,28 @@
+READ ME
+
+main code file name: clustering.py
+Inputs: clustering.py [dataset_file_name.txt] [num_of_top_clusters] [num_of_most_popular_words]
+Outputs: Clusters ranked in descending order with their corresponding popular words
+
+
+Functions used in the corresponding steps are listed below:-
+
+DATA CLEANING
+clean(doc):
+get_docs(fread):
+clean_data(fread):
+
+CLUSTERING
+def gen_tfidf_matrix(cleaned_doc_list, sample_num):
+def gen_tfidf_vector(cleaned_doc_list,curr_sample_num):
+clustering(start_idx, data_points, data_points_tfidf_features):
+
+
+MERGING CLUSTERS
+compare_cluster_tuples(t1, t2):
+aggregate(sibling_cluster_list):
+merge(cluster_list, num_clusters_to_remove):
+
+CLUSTER RANKING AND POPULAR WORDS
+cluster_popular_words(cluster,k):
+ranked_cluster_list(cluster_list):
